@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: Poppins,sans-serif;
+    background-color: #e74c3c;
+    animation: bg-color 10s infinite;
+}
+@keyframes bg-color {
+    0% { background-color: #e74c3c; }
+    20% { background-color: #f1c40f; }
+    40% { background-color: #1abc9c; }
+    60% { background-color: #3498db; }
+    80% { background-color: #9b59b6; }
+    100% { background-color: #e74c3c; }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10em;
+}
+
+header #back {
+    position: absolute;
+    top: -9.5em;
+    left: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+header #back {
+    transform: scale(.7);
+    transition: filter, transform .6s;
+}
+
+header #back:hover,
+header #back:active{
+    filter:opacity(.7);
+    transform: scale(.8);
+}
+
+.header-box img {
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    filter: opacity(1);
+    border: .3em solid white;
+    padding: .3em;
+}
+
+.header-box h1 {
+    color: white;
+}
+
+.center-hor {
+    position: absolute;
+    z-index: 2;
+    top: 2em;
+    left: 8em;
+}
+
+#time, #date {
+    color: white;
+    display: inline;
+}
+
+main {
+    position: relative;
+    top: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(111, 107, 106, 0.2);
+    margin-inline: 3em;
+    padding-inline: 2em;
+    border-radius: .7em;
+    color: white;
+}
+
+main b {
+    color: black;
+}
+
+.line {
+    background-color: white;
+    width: 5em;
+    height: .4em;
+    display: table;
+    position: relative;
+    top: .5em;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 1em;
+}
+
+
+@media only screen and (min-width: 768px) {
+    main {
+        position: relative;
+        top: 10em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(111, 107, 106, 0.2);
+        margin-inline: 10em;
+        padding-inline: 1em;
+        border-radius: .4em;
+        color: white;
+    }
+
+    .line {
+        background-color: white;
+        width: 5em;
+        height: .4em;
+        display: table;
+        position: relative;
+        top: .55em;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 1em;
+    }
+
+    .center-hor {
+        position: absolute;
+        z-index: 2;
+        top: 2em;
+        left: 8em;
+    }
+}

@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: Poppins,sans-serif;
+    background-color: #e74c3c;
+    animation: bg-color 10s infinite;
+  }
+  @keyframes bg-color {
+    0% { background-color: #e74c3c; }
+    20% { background-color: #f1c40f; }
+    40% { background-color: #1abc9c; }
+    60% { background-color: #3498db; }
+    80% { background-color: #9b59b6; }
+    100% { background-color: #e74c3c; }
+  }
+  
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10em;
+}
+
+.header-box img {
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    filter: opacity(.7);
+    border: .3em solid white;
+    padding: .3em;
+}
+
+.header-box img:hover {
+    filter: opacity(1);
+}
+
+.header-box h1 {
+    color: white;
+}
+
+.center-hor {
+    position: absolute;
+    z-index: 2;
+    top: 2em;
+    left: 7.5em;
+}
+
+#time, #date {
+    color: white;
+    display: inline;
+}
+
+main {
+    position: relative;
+    top: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-box a {
+    background-color: white;
+    padding: .5rem 6rem;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 1.2em;
+    transition: transform .5s;
+    display: block;
+    text-decoration: none;
+    border-radius: 12em;
+}
+
+.main-box a:hover,
+.main-box a:active {
+    transform: scale(1.10);
+    background-color: #4e7cff;
+}
+
+.main-box #tiktok span {
+    position: relative;
+    left: -.4em;
+}
+.main-box #youtube span {
+    position: relative;
+    left: -.8em;
+}
+.main-box #discord span {
+    position: relative;
+    left: -.4em;
+}
+
+.main-box img {
+    height: 1em;
+    transform: scale(3);
+    position: relative;
+    left: -3.6em;
+}
+
+.main-box #discord img {
+    height: .5em;
+    transform: scale(3);
+    position: relative;
+    left: -3.8em;
+}
+
+.main-box #tiktok img {
+    height: .5em;
+    transform: scale(3);
+    position: relative;
+    left: -4.1em;
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main-box a {
+        background-color: white;
+        padding: 1rem 20rem;
+    }
+
+    .main-box img {
+        height: 1em;
+        transform: scale(4);
+        position: relative;
+        left: -12.5em;
+    }
+
+    .main-box #discord img {
+        height: .5em;
+        transform: scale(4);
+        position: relative;
+        left: -12.7em;
+    }
+
+    .main-box #tiktok img {
+        height: .5em;
+        transform: scale(3);
+        position: relative;
+        left: -12.99em;
+    }
+    
+    
+}
