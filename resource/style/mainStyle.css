@@ -93,6 +93,11 @@ main {
     left: -.4em;
 }
 
+.main-box #primocounter span {
+    position: relative;
+    left: -.3em;
+}
+
 .main-box img {
     height: 1em;
     transform: scale(3);
@@ -105,6 +110,15 @@ main {
     transform: scale(3);
     position: relative;
     left: -3.4em;
+}
+
+.main-box #primocounter img {
+    background-color: rgba(32, 32, 32, 0.507);
+    border-radius: .1em;
+    height: .5em;
+    transform: scale(3);
+    position: relative;
+    left: -2em;
 }
 
 .main-box #youtube img {
@@ -187,6 +201,15 @@ input[type="text"], textarea, [contenteditable]
         transform: scale(3);
         position: relative;
         left: -12.89em;
+    }
+
+    .main-box #primocounter img {
+        background-color: rgba(32, 32, 32, 0.507);
+        border-radius: .1em;
+        height: .5em;
+        transform: scale(3);
+        position: relative;
+        left: -11em;
     }
     
     
