@@ -29,13 +29,13 @@ header {
     margin-right: auto;
     margin-left: auto;
     display: block;
-    filter: opacity(.7);
     border: .3em solid white;
+    filter: opacity(1);
     padding: .3em;
 }
 
 .header-box img:hover {
-    filter: opacity(1);
+    filter: opacity(.7);
 }
 
 .header-box h1 {
@@ -86,7 +86,7 @@ main {
 }
 .main-box #youtube span {
     position: relative;
-    left: -.8em;
+    left: -.3em;
 }
 .main-box #discord span {
     position: relative;
@@ -104,14 +104,49 @@ main {
     height: .5em;
     transform: scale(3);
     position: relative;
-    left: -3.8em;
+    left: -3.4em;
+}
+
+.main-box #youtube img {
+    height: .5em;
+    transform: scale(2);
+    position: relative;
+    left: -3.4em;
 }
 
 .main-box #tiktok img {
     height: .5em;
     transform: scale(3);
     position: relative;
-    left: -4.1em;
+    left: -3.7em;
+}
+
+*::selection 
+{
+    background-color:transparent;
+} 
+*::-moz-selection
+{
+    background-color:transparent;
+}
+*
+{        
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    /*IE10*/
+    -ms-user-select: none;
+    user-select: none;
+
+    /*You just need this if you are only concerned with android and not desktop browsers.*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}    
+input[type="text"], textarea, [contenteditable]
+{
+
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
 }
 
 @media only screen and (min-width: 768px) {
@@ -137,14 +172,21 @@ main {
         height: .5em;
         transform: scale(4);
         position: relative;
-        left: -12.7em;
+        left: -12.5em;
+    }
+
+    .main-box #youtube img {
+        height: .5em;
+        transform: scale(3);
+        position: relative;
+        left: -12.4em;
     }
 
     .main-box #tiktok img {
         height: .5em;
         transform: scale(3);
         position: relative;
-        left: -12.99em;
+        left: -12.89em;
     }
     
     
