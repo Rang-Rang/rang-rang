@@ -135,6 +135,13 @@ main {
     left: -3.7em;
 }
 
+.main-box #saweria img {
+    height: .5em;
+    transform: scale(3);
+    position: relative;
+    left: -2.5em;
+}
+
 *::selection 
 {
     background-color:transparent;
@@ -202,7 +209,7 @@ input[type="text"], textarea, [contenteditable]
         position: relative;
         left: -12.89em;
     }
-
+    
     .main-box #primocounter img {
         background-color: rgba(32, 32, 32, 0.507);
         border-radius: .1em;
@@ -212,5 +219,11 @@ input[type="text"], textarea, [contenteditable]
         left: -11em;
     }
     
+    .main-box #saweria img {
+        height: .5em;
+        transform: scale(3);
+        position: relative;
+        left: -12.89em;
+    }
     
 }
