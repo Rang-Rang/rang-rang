@@ -142,6 +142,13 @@ main {
     left: -2.5em;
 }
 
+.main-box #secreto img {
+    height: .5em;
+    transform: scale(3);
+    position: relative;
+    left: -2.4em;
+}
+
 *::selection 
 {
     background-color:transparent;
@@ -224,6 +231,13 @@ input[type="text"], textarea, [contenteditable]
         transform: scale(3);
         position: relative;
         left: -11.81em;
+    }
+
+    .main-box #secreto img {
+        height: .5em;
+        transform: scale(3);
+        position: relative;
+        left: -11.6em;
     }
     
 }
