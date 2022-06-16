@@ -21,7 +21,7 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 10em;
+    top: 5em;
 }
 
 .header-box img {
@@ -43,20 +43,20 @@ header {
 }
 
 .center-hor {
-    position: absolute;
-    z-index: 2;
-    top: 2em;
-    left: 7.5em;
+    text-align: center;
 }
 
 #time, #date {
     color: white;
-    display: inline;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 0;
 }
 
 main {
     position: relative;
-    top: 10em;
+    top: 5em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +64,7 @@ main {
 
 .main-box a {
     background-color: white;
-    padding: .5rem 6rem;
+    padding: .5rem 5rem;
     font-size: 24px;
     text-align: center;
     margin-bottom: 1.2em;
@@ -84,6 +84,12 @@ main {
     position: relative;
     left: -.4em;
 }
+
+.main-box #instagram span {
+    position: relative;
+    left: -.4em;
+}
+
 .main-box #youtube span {
     position: relative;
     left: -.3em;
@@ -118,7 +124,7 @@ main {
     height: .5em;
     transform: scale(3);
     position: relative;
-    left: -2em;
+    left: -1.5em;
 }
 
 .main-box #youtube img {
@@ -133,6 +139,13 @@ main {
     transform: scale(3);
     position: relative;
     left: -3.7em;
+}
+
+.main-box #instagram img {
+    height: .5em;
+    transform: scale(3);
+    position: relative;
+    left: -3em;
 }
 
 .main-box #saweria img {
@@ -215,6 +228,13 @@ input[type="text"], textarea, [contenteditable]
         transform: scale(3);
         position: relative;
         left: -12.89em;
+    }
+
+    .main-box #instagram img {
+        height: .5em;
+        transform: scale(3);
+        position: relative;
+        left: -12em;
     }
     
     .main-box #primocounter img {
