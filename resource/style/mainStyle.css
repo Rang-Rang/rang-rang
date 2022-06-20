@@ -104,6 +104,12 @@ main {
     left: -.3em;
 }
 
+.main-box #giveaway span {
+    position: relative;
+    left: -.1em;
+    font-size: .75em;
+}
+
 .main-box img {
     height: 1em;
     transform: scale(3);
